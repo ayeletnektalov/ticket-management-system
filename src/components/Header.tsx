@@ -1,8 +1,16 @@
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+
 export default function Header() {
   return (
-    <header style={{padding:'12px', borderBottom:'1px solid #eee'}}>
-      <h1>Ticket Management System</h1>
-    </header>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6" component="div">
+          Ticket Management System
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 }
 
